@@ -1,0 +1,148 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+
+    --color-de-fondo: #add6b4;
+    --color-de-link: #000;
+    --color-de-titulos: rgb(236, 240, 33);
+    --color-fondo-verde: #0af37e;
+    --color-cajas: #e91010 ;
+    --verde-botones: rgba(20, 172, 20, 0.267) ;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/*Sección Menu*/
+
+section.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 0px 153px;
+}
+
+/*cabecera y espacios*/
+header.menu__header{
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-de-titulos)
+}
+
+
+/* items del menu*/
+section.menu nav ul.menu__List{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 750px;
+
+}
+
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
