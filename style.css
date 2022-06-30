@@ -8,7 +8,7 @@ en las secciones señaladas */
 
     --color-de-fondo: #add6b4;
     --color-de-link: #000;
-    --color-de-titulos: rgb(236, 240, 33);
+    --color-de-titulos: rgba(0, 0, 0, 0.747);
     --color-fondo-verde: #0af37e;
     --color-cajas: #e91010 ;
     --verde-botones: rgba(20, 172, 20, 0.267) ;
@@ -37,7 +37,7 @@ section.menu{
     justify-content: space-between;
     align-items: center;
     align-content: flex-end;
-    height: 10vh;
+    height:10vh;
     margin: 0px 153px;
 }
 
@@ -47,31 +47,103 @@ header.menu__header{
     justify-content: space-between;
     font-size: 16px;
     font-weight: 700;
-    color: var(--color-de-titulos)
+    color: var(--color-de-titulos)   
 }
 
 
 /* items del menu*/
-section.menu nav ul.menu__List{
+section.menu nav ul.menu__list{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    width: 750px;
-
+    width: 625px;
 }
 
+/* estilo para navegacion email*/
+section.menu nav ul.menu__list li:nth-child(6){
+    color: black;
+    font-weight: 800;
+}
 
-/*Sección Title*/
+/*seccion de titulo*/
 
 section.title{
+    margin: 0 153px;
+    width: 80%;
+    color: var(--color-de-titulos)
+}
+
+section.title div.title__div{
+    justify-content: space-around;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
 
 }
 
-/*Sección About*/
+/*titulo principal*/
+section.title div.title__container h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
 
+/*imagen de perfil*/
+section.title img.title__profile{
+    width: 368px;
+}
+
+section.title div.title__div div.title__container h3{
+ font-size: 17px;
+ line-height: 23px;
+ width: 600px;
+ margin-bottom: 30px;
+}
+
+section.title div.title__div div.title__container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 500px;
+    font-size: 16px;
+    font-style: normail;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+/*seccion sobre*/
 section.about{
-
+    padding:  62px 153px;
+    margin-top: 8px;
+    background-color: var(--color-fondo-verde)
 }
+
+section.about div.about__container{
+    width: 700px;
+}
+
+section.about h3.about__title{
+    font-size: 32px;
+}
+
+section.about div.about__container p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*seccion skills*/
+section.skills{
+    margin: 64px 100px;
+}
+
+/*titulo de skills*/
+section.skills h3.skills__title{
+    font-weight: 32px;
+    text-align: center;
+}
+
 
 /*Sección Hobbies*/
 
