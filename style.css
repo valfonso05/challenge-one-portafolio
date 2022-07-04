@@ -12,7 +12,11 @@ en las secciones señaladas*/
     --color-fondo-verde: #00ff80b7;
     --color-cajas: #9bf0a9da ;
     --verde-botones: rgba(20, 172, 20, 0.267) ;
-    --color-network: rgba(247, 206, 25, 0.966);
+    --color-network: #c2a944ff;
+    --prueba: #c2a944ff;
+    --prueba2: #b56751ff;
+    --prueba3: #67729fff;
+
 }
 
 body {
@@ -53,6 +57,7 @@ section.menu{
 
 /*Cabecera y espacios*/
 header.menu__header{
+    margin-top: 1.5rem;
     display:flex;
     justify-content: space-between;
     font-size: 16px;
@@ -60,9 +65,9 @@ header.menu__header{
     color: var(--color-de-titulos)   
 }
 
-
 /*Items del menu*/
 section.menu nav ul.menu__list{
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -125,7 +130,7 @@ section.title div.title__div div.title__container ul{
 /*Seccion sobre*/
 section.about{
     padding:  62px 153px;
-    margin-top: 8px;
+    margin-top: 18px;
     background-color: var(--color-fondo-verde)
 }
 
@@ -257,20 +262,319 @@ section.academic div.academic__courses__box ul li{
     margin: 32px;
 }
 
+section.academic div.academic__courses__box ul li h4{
+    text-align: center;
+}
+
+section.academic div.academic__courses__box ul li p{
+    text-align: center;
+}
+
 div.academic__courses__box ul li.academic__courses__item__img{
+    display: block;
+    margin: 0px auto;
     background-color: var(--color-cajas);
     padding: 8%;
 }
 
+/*Seccion de experiencia*/
+section.experiencie{
+    margin: 32px 100px; 
+    padding: 32px 0;
+    background-color: var(--color-fondo-verde);
+}
 
-/* experiencia*/
-section.experience{
+/*Titulo de experiencia*/
+section.experience h2.experience__section__title{
+    font-size: 32px;
+    text-align: center; 
+    margin-bottom: 4rem;   
+}
 
+/*Analizar desde aqui*/
+
+section.experience div.experiencie__box{
+    justify-content: space-around;
+    align-content: flex-start;
+    display: flex;
+    margin: 20px 0px; 
+    margin-bottom: 4rem;
+}
+
+section.experience div.experiencie__box img.experience__img{
+    width: 752px;
+    height: 406px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 7px 0px rgb(0 0 0 / 60%);
+}
+
+section.experience div.experiencie__box div.experience__info{
+    padding: 2%;
+    width: 360px;
+    height: 286px;
+    align-self: flex-end;
+}
+
+div.experiencie__box div.experience__info h2{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+div.experiencie__box div.experience__info h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+div.experiencie__box div.experience__info div.experience__description span.experience__repo button.experiencia__botao--repo{
+    font-size: 1rem;
+    margin: 0 auto;
+    margin: 2rem 1rem 0 1rem;
+    width: 7rem;
+    min-width: 6rem;
+    height: 3em;
+    border-radius: 0.5rem;
+    transition: 1s all;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #586372;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+div.experiencie__box div.experience__info div.experience__description span.experience__repo button.experiencia__botao--repo:hover {
+    transition: .2s all;
+    background-color: var(--color-network) ;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+div.experiencie__box div.experience__info div.experience__description span.experience__demo button.experience__botao--demo {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin: 2rem 1rem 0 1rem;
+    width: 7rem;
+    min-width: 6rem;
+    height: 3em;
+    border-radius: 0.5rem;
+    transition: 1s all;
+    font-weight: 550;
+     font-size: 16px;
+     line-height: 20px;
+    background-color: #146fe6;
+    color: #ebf3f6;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer; 
+}
+
+div.experiencie__box div.experience__info div.experience__description span.experience__demo button.experience__botao--demo:hover {
+    transition: .2s all;
+    background-color: var(--color-network);
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;   
+}
+
+/* experiencia-2*/
+
+section.experience div.experiencie__box1{
+    justify-content: space-around;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 0px; 
+    margin-bottom: 4rem;
+}
+
+section.experience div.experiencie__box1 img.experience__img{
+    width: 752px;
+    height: 406px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 7px 0px rgb(0 0 0 / 60%);
+}
+
+section.experience div.experiencie__box1 div.experience__info{
+    padding: 2%;
+    width: 360px;
+    height: 286px;
+    align-self: flex-end;
+}
+
+div.experiencie__box1 div.experience__info h2{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+div.experiencie__box1 div.experience__info h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+div.experiencie__box1 div.experience__info div.experience__description span.experience__repo button.experiencia__botao--repo{
+    font-size: 1rem;
+    margin: 0 auto;
+    margin: 2rem 1rem 0 1rem;
+    width: 7rem;
+    min-width: 6rem;
+    height: 3em;
+    border-radius: 0.5rem;
+    transition: 1s all;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #586372;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+div.experiencie__box1 div.experience__info div.experience__description span.experience__repo button.experiencia__botao--repo:hover {
+    transition: .2s all;
+    background-color: var(--color-network) ;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div.experiencie__box1 div.experience__info div.experience__description span.experience__demo button.experience__botao--demo {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin: 2rem 1rem 0 1rem;
+    width: 7rem;
+    min-width: 6rem;
+    height: 3em;
+    border-radius: 0.5rem;
+    transition: 1s all;
+    font-weight: 550;
+     font-size: 16px;
+     line-height: 20px;
+    background-color: #146fe6;
+    color: #ebf3f6;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer; 
+}
+
+
+div.experiencie__box1 div.experience__info div.experience__description span.experience__demo button.experience__botao--demo:hover {
+    transition: .2s all;
+    background-color: var(--color-network);
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;   
 }
 
 /*Contacto*/
-section.formcontato{
 
+section.formcontato{
+    /*margin: 64px 100px;*/
+    padding: 32px 0;
+    background-color: var(--color-fondo-azul); 
+}
+
+section.formcontato div.formcontato__contacto{
+    justify-content: space-around;
+    /*align-content: flex-start;*/
+    align-items: center;
+    display: flex;
+    margin: 64px 100px;
+}
+
+div.formcontato__contacto div.formcontato--esquerda{
+    padding: 2%;
+}
+
+div.formcontato__text h2.formcontato__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 15px;
+}
+
+div.formcontato__text h3.formcontato__subtext{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+div.formcontato__text form.formcontato__form{
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+div.formcontato__text form.formcontato__form input.formcontato__input{
+    margin: 4px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    border: none;
+}
+
+div.formcontato__text form.formcontato__form input.formcontato__input:nth-child(2) {
+    border-bottom: 1.5px solid #2A7AE4;
+}
+
+div.formcontato__text form.formcontato__form textarea.formcontato__textarea{
+    margin: 4px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    resize: none;
+    border: none;
+}
+
+#mail::placeholder { color:#146fe6; }
+
+div.formcontato__text form.formcontato__form button.formcontato__botao{
+    font-size: 1rem;
+    margin: 4px;
+    /*margin: 1rem 1rem 0 1rem;*/
+    width: 12rem;
+    min-width: 6rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    transition: 1s all;
+    background-color: #146fe6;
+    color: #ebf3f6;
+    border: none;
+    cursor: pointer;
+    /*fuente*/
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+div.formcontato__text form.formcontato__form button.formcontato__botao:hover {
+    transition: .2s all;
+    background-color: rgb(174, 208, 252);
+    color: rgb(8, 8, 8);
 }
 
 /*footeer*/
@@ -282,7 +586,7 @@ section.footer{
     background: url(assets/footer.png);
     margin-top: 4rem;
     padding: 3.5rem;
-    width: 100%;
+    width: 91%;
     height: 20%;
 }
 
