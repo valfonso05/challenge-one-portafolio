@@ -12,6 +12,7 @@ en las secciones señaladas*/
     --color-fondo-verde: #00ff80b7;
     --color-cajas: #9bf0a9da ;
     --verde-botones: rgba(20, 172, 20, 0.267) ;
+    --color-network: rgba(247, 206, 25, 0.966);
 }
 
 body {
@@ -22,9 +23,18 @@ body {
     padding: 0;
     line-height: 1;
 }
+
 ol, ul,li {
     list-style: none;
 }
+
+
+section.title div div ul.title__network img:hover{
+    transform: scale(1.5);
+    opacity: .45;
+    border: solid var(--color-network)
+}
+
 a{
     text-decoration: none;
     color: var(--color-de-link);
@@ -266,7 +276,42 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+  
+    text-align: center;
+    color: #13e683;
+    background: url(assets/footer.png);
+    margin-top: 4rem;
+    padding: 3.5rem;
+    width: 100%;
+    height: 20%;
+}
+
+.creador{
+    color: blue;
+    margin-bottom: 0.4rem;
+}
+
+div redessociales{
+    display: relative;
+}
+
+div redes{
+    position: absolute;
+    right: 0;
+}
+
+div li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+div li a img{
+    height: 4rem;
+    height: 4rem;
+}
+
+div li a img:hover{
+    transform: scale(1.7)
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
