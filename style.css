@@ -13,7 +13,8 @@ en las secciones señaladas*/
     --color-cajas: #9bf0a9da ;
     --verde-botones: rgba(20, 172, 20, 0.267) ;
     --color-network: #c2a944ff;
-    --prueba: #c2a944ff;
+    --color-blanco: #ffffff;
+    --prueba: rgb(214, 185, 70);
     --prueba2: #b56751ff;
     --prueba3: #67729fff;
 
@@ -35,7 +36,7 @@ ol, ul,li {
 
 section.title div div ul.title__network img:hover{
     transform: scale(1.5);
-    opacity: .45;
+    opacity: .60;
     border: solid var(--color-network)
 }
 
@@ -71,7 +72,7 @@ section.menu nav ul.menu__list{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    width: 625px;
+    width: 675px;
 }
 
 /*Estilo para navegacion email*/
@@ -113,6 +114,7 @@ section.title div.title__div div.title__container h3{
  line-height: 23px;
  width: 600px;
  margin-bottom: 30px;
+ text-align: justify;
 }
 
 section.title div.title__div div.title__container ul{
@@ -129,9 +131,9 @@ section.title div.title__div div.title__container ul{
 
 /*Seccion sobre*/
 section.about{
-    padding:  62px 153px;
+    padding:  70px 160px;
     margin-top: 18px;
-    background-color: var(--color-fondo-verde)
+    background-color: var(--prueba3);
 }
 
 section.about div.about__container{
@@ -146,6 +148,7 @@ section.about div.about__container p{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    text-align: justify;
 }
 
 /*Seccion skills*/
@@ -171,10 +174,10 @@ section.skills div.skills__line{
 section.skills div.skills__box{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 16px;
-    background-color: var(--color-cajas);
+    background-color: var(--prueba);
     margin: 22px 15px 22px 0px;
     width: 150px;
     height: 160px;
@@ -211,10 +214,10 @@ section.hobbies div.hobbies__line{
 section.hobbies div.hobbies__box{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 16px;
-    background-color: var(--color-cajas);
+    background-color: var(--prueba);
     margin: 22px 15px 22px 0px;
     width: 150px;
     height: 160px;
@@ -232,7 +235,7 @@ section.hobbies div.hobbies__box ul{
 /* Experiencia Académica*/
 section.academic{
     padding: 64px 0;
-    background-color: var(--color-de-fondo);
+    background-color: var(--prueba3);
 }
 
 /*Titulo de sección*/
@@ -273,7 +276,7 @@ section.academic div.academic__courses__box ul li p{
 div.academic__courses__box ul li.academic__courses__item__img{
     display: block;
     margin: 0px auto;
-    background-color: var(--color-cajas);
+    background-color: var(--color-blanco);
     padding: 8%;
 }
 
@@ -483,7 +486,7 @@ div.experiencie__box1 div.experience__info div.experience__description span.expe
 section.formcontato{
     /*margin: 64px 100px;*/
     padding: 32px 0;
-    background-color: var(--color-fondo-azul); 
+    background-color: var(--prueba3); 
 }
 
 section.formcontato div.formcontato__contacto{
@@ -548,74 +551,73 @@ div.formcontato__text form.formcontato__form textarea.formcontato__textarea{
     border: none;
 }
 
-#mail::placeholder { color:#146fe6; }
+#email::placeholder{ 
+    color:#146fe6; 
+}
 
 div.formcontato__text form.formcontato__form button.formcontato__botao{
     font-size: 1rem;
     margin: 4px;
-    /*margin: 1rem 1rem 0 1rem;*/
     width: 12rem;
     min-width: 6rem;
     height: 3rem;
     border-radius: 0.3rem;
     transition: 1s all;
+    font-weight: 550;
+     font-size: 16px;
+     line-height: 20px;
     background-color: #146fe6;
     color: #ebf3f6;
-    border: none;
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;
     cursor: pointer;
-    /*fuente*/
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
 }
 
 div.formcontato__text form.formcontato__form button.formcontato__botao:hover {
     transition: .2s all;
-    background-color: rgb(174, 208, 252);
-    color: rgb(8, 8, 8);
+    background-color: var(--color-network);
+    border-color: #141516;
+    border-width: 1px;
+    border-style: solid;   
 }
 
 /*footeer*/
 
 section.footer{
-  
     text-align: center;
-    color: #13e683;
     background: url(assets/footer.png);
     margin-top: 4rem;
     padding: 3.5rem;
     width: 91%;
-    height: 20%;
 }
 
-.creador{
+div p.creador{
     color: blue;
     margin-bottom: 0.4rem;
 }
 
-div redessociales{
+div div.redessociales{
     display: relative;
 }
 
-div redes{
+div div.redes{
     position: absolute;
     right: 0;
 }
 
-div li{
+div div.redessociales li{
     display: inline;
     margin: 0 0 0 15px;
 }
 
 div li a img{
-    height: 4rem;
-    height: 4rem;
+    height: 2rem;
+    height: 2rem;
 }
 
 div li a img:hover{
-    transform: scale(1.7)
+    transform: scale(1.9)
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
